@@ -35,12 +35,12 @@ def Giro_Contra_Reloj_MotorA():
 	GPIO.output(in2,False)
 
 def  Giro_Favor_Reloj_MotorB():
-	GPIO.output(in3,False)
-	GPIO.output(in4,True)
-
-def Giro_Contra_Reloj_MotorB():
 	GPIO.output(in3,True)
 	GPIO.output(in4,False)
+
+def Giro_Contra_Reloj_MotorB():
+	GPIO.output(in3,False)
+	GPIO.output(in4,True)
 def terminar():
 	GPIO.output(in3,False)
 	GPIO.output(in4,True)
